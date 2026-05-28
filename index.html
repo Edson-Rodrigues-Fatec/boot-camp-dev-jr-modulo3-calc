@@ -8,12 +8,18 @@
 
 </head>
 <body>
-  
-<h1>Calculadora</h1>
-<input/>
-<input/>
-<button>Somar</button>
-<input readonly/>
+  <div class="container">
+    <div class="calculator">
+       <h1>Calculadora</h1>
+       <input id="n1" type="number" placeholder="Primeiro número"/>
+       <input id="n2" type="number" placeholder="Segundo número"/>
+       <button onclick="somar()">Somar</button>
+       <input id="saida" readonly/>
+    </div>
+
+    <div class="historico">
+    </div>
+  </div>
  <script src="script.js"></script>
 </body>
 </html>
