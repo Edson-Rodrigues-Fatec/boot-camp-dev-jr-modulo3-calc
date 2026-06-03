@@ -9,7 +9,7 @@ function calc(operacao) {
     }
 
     document.getElementById("saida").value = resultado;
-    var newHistory = "<div>" + n1 + " " + operacao + " " + n2 + " = " + resultado + "</div>";
+    var newHistory = "<p>" + n1 + " " + operacao + " " + n2 + " = " + resultado + "</p>";
 
     var history = document.getElementById("history");
     history.innerHTML = newHistory + history.innerHTML;
