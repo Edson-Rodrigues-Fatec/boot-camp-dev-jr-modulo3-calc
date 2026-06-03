@@ -7,5 +7,13 @@ function calc(operacao) {
     case "*":    var resultado = n1 * n2;   break;
     case "/":    var resultado = n1 / n2;   break;
     }
+
     document.getElementById("saida").value = resultado;
-}
+    var newHistory = "<div>" + n1 + " " + operacao + " " + n2 + " = " + resultado + "</div>";
+
+    var history = document.getElementById("history");
+    history.innerHTML = newHistory + history.innerHTML;
+        if(history.children.length > 10) {
+  history.removeChild(history.childNodes[10]);
+    }
+}   
